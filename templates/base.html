@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<style>
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .product {
+    flex: 0 0 30%;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .product img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+
+  h1 {
+    color: darkred;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    margin-bottom: 5px;
+  }
+
+  p {
+    margin: 4px 0;
+  }
+</style>
+<head>
+    <title>Lambodar Labs</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/products">Products</a> |
+        <a href="/contact">Contact</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
